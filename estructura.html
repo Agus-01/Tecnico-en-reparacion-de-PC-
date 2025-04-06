@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Técnico en Informática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>Técnico en Informática</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#informacion">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="service-card" onclick="openModal('service1')">
+            <h3>Reparación de PCs</h3>
+            <p>Diagnóstico y reparación de fallos en hardware y software.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service2')">
+            <h3>Optimización</h3>
+            <p>Mejora el rendimiento de tu sistema operativo.</p>
+        </div>
+        <div class="service-card" onclick="openModal('service3')">
+            <h3>Instalación de Software</h3>
+            <p>Instalación y configuración de programas y sistemas.</p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Título del Servicio</h2>
+            <p id="modalDescription">Descripción del servicio.</p>
+        </div>
+    </div>
+
+    <!-- Información -->
+    <section id="informacion">
+       <h1>Sobre mí</h1> 
+        <p>Soy Técnico en Informática con una amplia experiencia en el mundo de las computadoras y la tecnología. Mi pasión por el ámbito tecnológico me ha permitido desarrollar un gran conocimiento en hardware, software, redes y sistemas operativos. Mi objetivo es brindar soluciones efectivas a problemas informáticos, mejorar la eficiencia de los sistemas y asegurarme de que todo funcione de manera óptima. Estoy comprometido con la actualización constante de mis conocimientos para ofrecer siempre lo mejor a mis clientes.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, puedes enviarme un correo o llamarme.</p>
+        <button id="contact-btn">Contactar</button>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Técnico en Informática. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
